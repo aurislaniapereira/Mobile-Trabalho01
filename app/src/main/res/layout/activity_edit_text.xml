@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FDFCFF"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:background="#130EA3"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#130EA3"
+                    android:text="Primeiro trio de funcionalidades"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#F6F2F2" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="356dp"
+                    android:layout_height="wrap_content"
+                    android:text="Autocomplete (com array adapter), Radio Button e EditText"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#D1CFCF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="655dp"
+                android:gravity="bottom|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Digite o nome do estado:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#0E0E0E" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="AutoCompleteTextView" />
+
+                <Button
+                    android:id="@+id/enviar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enviar"
+                    app:backgroundTint="#130EA3" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="243dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/imgbranca" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="515dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="Selecione seu sexo:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#0C0C0C" />
+
+                    <RadioGroup
+                        android:layout_width="251dp"
+                        android:layout_height="100dp" >
+
+                        <RadioButton
+                            android:id="@+id/radioButtomF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Feminino" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtomM"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Masculino" />
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selecionar"
+                        app:backgroundTint="#130EA3" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="251dp"
+                        android:layout_height="55dp"
+                        app:srcCompat="@drawable/imgbranca" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|top"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Digite algo para testar o EditText"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="#0B0A0A" />
+
+                        <EditText
+                            android:id="@+id/editText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="265dp"
+                            android:layout_height="61dp"
+                            app:srcCompat="@drawable/imgbranca" />
+
+                        <Button
+                            android:id="@+id/button_go2"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/botao"
+                            android:text="Go"
+                            android:textColor="#F5F5FA"
+                            app:backgroundTint="#130EA3"
+                            tools:text="Go" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToggleButton">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FDFCFF"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:background="#130EA3"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#130EA3"
+                    android:text="Segundo trio de funcionalidades"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#F6F2F2" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="356dp"
+                    android:layout_height="wrap_content"
+                    android:text="Toggle Button, Tocar Som e Clique longo"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#D1CFCF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="704dp"
+                android:gravity="bottom|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aperte no botão para mudar o horário"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#101010" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="242dp"
+                    android:layout_height="4dp"
+                    app:srcCompat="@drawable/imgbranca" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton"
+                    android:layout_width="82dp"
+                    android:layout_height="85dp"
+                    android:background="@drawable/tbutton"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="515dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="Aperte no botão para ir a tocar um som:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#0C0C0C" />
+
+                    <Button
+                        android:id="@+id/button_go3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ir"
+                        app:backgroundTint="#130EA3" />
+
+
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="251dp"
+                        android:layout_height="55dp"
+                        app:srcCompat="@drawable/imgbranca" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="248dp"
+                        android:gravity="center|top"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Teste um clique longo:"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="#0B0A0A" />
+
+                        <Button
+                            android:id="@+id/button_long"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Segure"
+                            app:backgroundTint="#130EA3" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="146dp"
+                            android:gravity="bottom|center"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/button_go6"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/botao"
+                                android:text="Go"
+                                android:textColor="#FAFAFD"
+                                app:backgroundTint="#130EA3"
+                                tools:text="Go" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
